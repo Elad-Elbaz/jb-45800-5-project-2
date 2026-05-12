@@ -1,0 +1,31 @@
+.switch-container {
+  width: 50px;
+  height: 15px;
+  background-color:black;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 1px;
+  cursor: pointer;
+  /* Smoothly transition the background color */
+  transition: background-color 0.3s ease; 
+}
+
+.switch-container.on {
+  background-color: #4cd964; /* Green background when ON */
+}
+
+.switch-handle {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Smoothly transition the movement (horizontal slide) */
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.switch-container.on .switch-handle {
+  /* Move handle to the right when container has 'on' class */
+  transform: translateX(30px);
+}

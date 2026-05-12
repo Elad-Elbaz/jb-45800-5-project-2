@@ -1,0 +1,23 @@
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+  gap: 0;
+}
+
+.layout header {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.layout main {
+  grid-row: 2;
+  grid-column: 1;
+  overflow-y: auto;
+}
+
+.layout footer {
+  grid-row: 3;
+  grid-column: 1;
+}

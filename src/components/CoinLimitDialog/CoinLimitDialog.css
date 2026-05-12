@@ -1,0 +1,45 @@
+.coin-limit-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.coin-limit-dialog {
+  width: min(92vw, 420px);
+  background: black;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.coin-limit-dialog h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.coin-limit-options {
+  max-height: 220px;
+  overflow-y: auto;
+  margin: 12px 0;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.coin-limit-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 4px;
+  cursor: pointer;
+}
+
+.coin-limit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}

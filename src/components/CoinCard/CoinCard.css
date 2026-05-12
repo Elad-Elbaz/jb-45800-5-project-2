@@ -1,0 +1,83 @@
+.CoinCard {
+  display: flex;
+  align-items: center;
+  gap:10px;
+  padding: 10px;
+}
+
+.CoinCard > p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.CoinCard > button {
+  border: 1px solid #3a3a3a;
+  border-radius: 50px;
+  padding: 5px 5px;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.CoinCard > button:hover {
+  background-color: #333333;
+  transform: translateY(-1px);
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(2px);
+}
+
+.modal-content {
+  width: min(92vw, 420px);
+  background-color: #1e1e1e;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.65);
+  padding: 22px 20px 18px;
+  color: #e0e0e0;
+ 
+}
+
+.modal-content > h3 {
+  margin: 0 0 14px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.modal-content > ul {
+  margin: 0 0 16px;
+  text-align: left;
+}
+
+.modal-content > ul > li {
+  margin-bottom: 8px;
+  color: #cfcfcf;
+}
+
+.close-modal-btn {
+  width: 100%;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  padding: 10px 14px;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.close-modal-btn:hover {
+  background-color: #333333;
+}

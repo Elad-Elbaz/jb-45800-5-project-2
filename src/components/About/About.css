@@ -1,0 +1,64 @@
+.About {
+    /* Organizes the layout neatly */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    background-color: #121212;
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.About h3,
+.About p,
+.About a {
+    /* 1. Create the looping rainbow gradient */
+    background: linear-gradient(100deg,
+            whitesmoke, gold);
+    background-size: 200% auto;
+    /* Stretches the background for smooth animation */
+
+    /* 2. Clip the background to the text shape */
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* 3. Make the actual text invisible so the background shows through */
+    color: transparent;
+
+    /* 4. Add the glow effect */
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.4));
+
+    /* 5. Animate the gradient moving across the text */
+    animation: flow 4s linear infinite;
+
+    font-weight: bold;
+}
+
+
+
+.About a:hover {
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.8));
+}
+
+/* The animation keyframes */
+@keyframes flow {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.About img {
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+
+    margin-top: 1rem;
+    border-radius: 8px;
+
+}

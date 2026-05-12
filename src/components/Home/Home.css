@@ -1,0 +1,68 @@
+/* קונטיינר ראשי - תואם לדף הגרפים */
+.Home {
+    background-color: #121212;
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* רשת המטבעות */
+.coins-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* כרטיסיית מטבע - בעיצוב תואם לעטיפת הגרף */
+.coin-item {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 25px 20px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.coin-item:hover {
+    /* transform: translateY(-5px); */
+    border-color: #555;
+}
+
+/* תמונת המטבע */
+.coin-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-color: #2a2a2a; /* רקע עדין מתחת לתמונה */
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+/* סמל המטבע */
+.coin-item p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ccc;
+    margin: 0 0 20px 0;
+    letter-spacing: 1px;
+}
+
+/* התאמה למובייל */
+@media (max-width: 600px) {
+    .coin-item {
+        width: 100%;
+        max-width: 300px;
+    }
+}

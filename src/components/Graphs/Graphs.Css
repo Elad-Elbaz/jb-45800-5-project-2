@@ -1,0 +1,71 @@
+/* קונטיינר ראשי */
+.graphs-container {
+    padding: 40px 20px;
+    background-color: #121212; /* התאמה ל-Dark Mode של שאר האתר */
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* כותרת */
+.graphs-title {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* הודעה כשאין מטבעות */
+.no-coins-msg {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    color: #bbb;
+    text-align: center;
+    max-width: 500px;
+}
+
+/* טקסט טעינה */
+.loader {
+    color: #82ca9d;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 50px;
+    letter-spacing: 1px;
+}
+
+/* עטיפת הגרף - כאן קבענו את הגובה כדי ש-ResponsiveContainer יעבוד */
+.chart-wrapper {
+    width: 90%;
+    max-width: 1000px;
+    height: 500px; /* גובה קבוע לגרף */
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+
+}
+
+.Tooltip{
+      background-color: #1e1e1e;
+       border: 1px solid #444;
+        color: #fff;
+        
+
+      
+}
+/* התאמה למובייל */
+@media (max-width: 600px) {
+    .chart-wrapper {
+        height: 350px;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .graphs-title {
+        font-size: 1.5rem;
+    }
+}
